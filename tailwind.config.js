@@ -11,10 +11,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-
-          purple: "rgb(133, 77, 255)",
-          "light-grey": "rgb(219,219,219)",
-          "light-red": "rgb(255,87,87)",
+        "soft-purple": "rgb(133, 77, 255)",
+        "light-grey": "rgb(219,219,219)",
+        "light-red": "rgb(255,87,87)",
       },
     },
   },

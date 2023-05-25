@@ -16,7 +16,7 @@ const Input = (props) => {
         id={props.name}
         className={`xl:w-[160px] min-[400px]:w-[88px] w-[70px] xl:h-[73px] h-[54px] rounded-lg border-[1px] ${
           props.errors[props.name] && "border-light-red"
-        } focus:border-purple xl:pl-6 min-[400px]:pl-4 pl-2 caret-purple xl:text-3xl min-[400px]:text-xl text-base font-bold appearance-none outline-none`}
+        } focus:border-soft-purple xl:pl-6 min-[400px]:pl-4 pl-2 caret-soft-purple xl:text-3xl min-[400px]:text-xl text-base font-bold appearance-none outline-none`}
         placeholder={props.placeholder}
         onInput={props.moveToNextFocus}
         {...props.register(props.name, {
