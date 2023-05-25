@@ -13,7 +13,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <main className="flex items-center justify-center h-screen bg-colors-light-grey">
+      <main className="flex items-center justify-center h-screen bg-gradient-to-br from-purple-200 via-purple-400 to-purple-800">
         <Calculator />
       </main>
     </>
