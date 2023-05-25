@@ -164,10 +164,10 @@ const Calculator = () => {
   }
 
   return (
-    <div className="bg-white xl:min-h-[650px] xl:min-w-[840px] min-h-[485px] min-w-[345px] rounded-xl rounded-br-[5rem] shadow-sm">
-      <div className="xl:pt-14 pt-12 pb-9 xl:pl-14 pl-[1.5rem] max-w-[320px]">
-        <div className="max-w-[310px]">
-          <div className="flex xl:gap-8 gap-4 w-full">
+    <div className="bg-white xl:min-h-[650px] xl:min-w-[840px] min-h-[485px] min-[400px]:min-w-[345px] min-[400px]:mx-0 mx-4 rounded-xl rounded-br-[5rem] shadow-sm">
+      <div className="xl:pt-14 pt-12 pb-9 xl:pl-14 min-[400px]:pl-[1.5rem] pl-4 min-[400px]:pr-0 pr-4 max-w-[300px]">
+        <div className="max-w-[300px]">
+          <div className="flex xl:gap-8 min-[400px]:gap-4 gap-2 w-full">
             <Input
               placeholder="DD"
               name="day"
@@ -202,11 +202,11 @@ const Calculator = () => {
             />
           </div>
 
-          <div className="xl:mr-10 mr-6 xl:pt-12 pt-16 relative border-b border-b-gray-200 xl:min-w-[725px] min-w-[290px]">
+          <div className="xl:mr-10 min-[400px]:mr-6 mr-5 xl:pt-12 pt-16 relative border-b border-b-gray-200 xl:min-w-[725px] min-[400px]:min-w-[310px] min-w-[265px]">
             <button
               id="btnCalculateAge"
               aria-label="CalculateAge"
-              className="flex items-center justify-center bg-colors-purple xl:h-[92px] h-[65px] xl:w-[92px] w-[65px] rounded-full absolute xl:right-0 right-[110px] xl:top-[3px] top-8 hover:bg-black transition-all shadow-md outline-none"
+              className="flex items-center justify-center bg-colors-purple xl:h-[92px] h-[65px] xl:w-[92px] w-[65px] rounded-full absolute xl:right-0 min-[400px]:right-[120px] right-[6rem] xl:top-[3px] top-8 hover:bg-black transition-all shadow-md outline-none"
               disabled={isSubmitting}
               onClick={handleSubmit(calculateAgeHandler)}>
               <img src="./icon-arrow.svg" alt="Arrow" className="xl:w-14 w-9" />
@@ -215,20 +215,20 @@ const Calculator = () => {
         </div>
       </div>
 
-      <div className="xl:pt-6 pt-2 ml-14 mr-[3.75rem] xl:mt-3 mt-10 max-w-[700px]">
-        <p className="xl:text-[100px] text-[56px] font-extrabold italic xl:pl-10 pl-1 xl:-m-10 -m-8 xl:max-w-[720px] max-w-[310px]">
+      <div className="xl:pt-6 min-[400px]:pt-2 pt-0 min-[400px]:ml-14 ml-10 min-[400px]:mr-[3.75rem] mr-10 xl:mt-3 min-[400px]:mt-10 mt-8 max-w-[700px]">
+        <p className="xl:text-[100px] min-[400px]:text-[56px] text-[40px] font-extrabold italic xl:pl-10 pl-1 xl:-m-10 min-[400px]:-m-8 -m-2 xl:max-w-[720px] max-w-[310px]">
           <span ref={yearResultRef} className="text-colors-purple">
             --
           </span>{" "}
           years
         </p>
-        <p className="xl:text-[100px] text-[56px] font-extrabold italic xl:pl-10 pl-1 xl:-m-10 -m-8 xl:max-w-[720px] max-w-[310px]">
+        <p className="xl:text-[100px] min-[400px]:text-[56px] text-[40px] font-extrabold italic xl:pl-10 pl-1 xl:-m-10 min-[400px]:-m-8 -m-2 xl:max-w-[720px] max-w-[310px]">
           <span ref={monthResultRef} className="text-colors-purple">
             --
           </span>{" "}
           months
         </p>
-        <p className="xl:text-[100px] text-[56px] font-extrabold italic xl:pl-10 pl-1 xl:-m-10 -m-8 xl:max-w-[720px] max-w-[310px]">
+        <p className="xl:text-[100px] min-[400px]:text-[56px] text-[40px] font-extrabold italic xl:pl-10 pl-1 xl:-m-10 min-[400px]:-m-8 -m-2 xl:max-w-[720px] max-w-[310px]">
           <span ref={dayResultRef} className="text-colors-purple">
             --
           </span>{" "}
